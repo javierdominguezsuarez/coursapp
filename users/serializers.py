@@ -1,4 +1,4 @@
-from config.settings.local import EMAIL_HOST_USER
+
 from rest_framework import serializers, settings
 from .models import CustomUser
 from django.contrib.auth.models import User
@@ -46,22 +46,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         customUser.set_password(validated_data['password'])
         customUser.save()
         token, created = Token.objects.get_or_create(user = customUser)
-        print(token)
-        body = render_to_string(
-            'estilos/email.html',{
-                'name':validated_data['first_name']
-            },
-        )
-        email_message = EmailMessage(
-            subject = 'Bienvenido a toHoodList',
-            body = body,
-            from_email=EMAIL_HOST_USER,
-            to = [validated_data['email']]
-
-        )
-        email_message.content_subtype = 'html'
-        email_message.send()
-        
         return customUser , token.key
 
 class LoginSerializer(serializers.Serializer):
