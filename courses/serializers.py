@@ -14,7 +14,7 @@ class VideoSerilizer (serializers.ModelSerializer):
 class CommentSerilizer (serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ['user','video']
+        fields = ['user','video','text']
 
 class SeemSerilizer (serializers.ModelSerializer):
     class Meta:

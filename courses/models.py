@@ -36,7 +36,7 @@ class Comment (models.Model):
     video = ForeignKey('Video', on_delete=CASCADE)
     pub = models.DateField(auto_now=True)
     hour = models.TimeField(auto_now=True)
-
+    text = models.TextField(max_length= 400)
 class Seem (models.Model):
     user = ForeignKey('users.CustomUser',on_delete=CASCADE)
     Video = ForeignKey('Course',on_delete=CASCADE)
