@@ -12,7 +12,7 @@ from rest_framework import permissions
 def login_view(request, *args, **kwargs):
     return render (request,"estilos/login.html")
 def register_view(request, *args, **kwargs):
-    return render (request,"estilos/signin.html")    
+    return render (request,"estilos/signin.html")     
 class RegisterViewSet (viewsets.ModelViewSet):
     serializer_class =  RegisterSerializer
     queryset = CustomUser.objects.all()
