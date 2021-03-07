@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, body{
+    background-color: #2B2C3E;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    border-right: 2px solid #4F4F4F;
+    
+}
+
+.txt{
+    background: none; 
+    border: none;
+    width: 50%;
+    border-bottom: 2px solid #4F4F4F;
+    margin-top: 2em;
+}
+
+
+#btn{
+    margin-top: 13%;
+    background: #3B79D7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4.21942px 22.1519px rgba(7, 42, 184, 0.3);
+    border-radius: 91.7724px;
+    width: 50%;
+    height: 30%;
+    border-style: none;
+    font-weight: bold;
+}
+
+#rgst{
+    
+    border: none;
+    background-color: #2B2C3E;
+    margin-top: 2%;
+    font-weight:600;
+}
+
+.present {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+}
+
+.txt:hover{
+    outline: none;
+    border-bottom: 2px solid #3B79D7;
+}
+
+#login-txt{
+    color: #3B79D7;
+    font-weight: 600;
+}
+
+#coursLogin{
+    text-decoration: underline 3px #3B79D7;
+}
+
+#cours-present{
+    font-size: 104px;
+    text-decoration: underline 10px #3B79D7;
+    margin: 0;
+}
+
+#your-learning{
+    font-size: 44px;
+    margin: 0;
+}
+
+.login-head-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#diam-login{
+    height: 25px;
+    margin-right: 3px;
+}
+
+#diam-present{
+    height: 80px;
+    margin-right: 3px;
+}
+
+#welcome{
+    margin-bottom: 1px;
+}
+
+#nombre{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.txt1{
+    background: none; 
+    border: none;
+    width: 25%;
+    border-bottom: 2px solid #4F4F4F;
+    margin-top: 2em;
+}
+
+#nor{
+    margin-left: 15px;
+
+}
+#sur{
+    margin-left: 12px;
+}
