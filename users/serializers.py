@@ -59,5 +59,4 @@ class LoginSerializer(serializers.Serializer):
         return data
     def create(self, data):
         token, created = Token.objects.get_or_create(user=self.context['user'])
-        print(self.context['user'])
-        return CustomUser.objects.first(), token.key
+        return self.context['user'], token.key

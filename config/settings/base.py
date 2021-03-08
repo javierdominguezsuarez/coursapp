@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'decouple',
     'rest_framework',
     'courses',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
