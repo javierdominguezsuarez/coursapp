@@ -20,7 +20,7 @@ config.encoding = 'cp1251'
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'cnjc&rgmh*wrfsz7-(tfaky0ekfihfgy3k13)kmk3)z2%v=k27'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
